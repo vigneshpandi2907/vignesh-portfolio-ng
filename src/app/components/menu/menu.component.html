@@ -1,0 +1,23 @@
+<div class="parent">
+  <div class="navigation">
+    <ul>
+      <li
+        *ngFor="let item of links"
+        [class.active]="firstActive === item.id"
+        class="list"
+      >
+        <a
+          href="javascript:void(0);"
+          (click)="scrollToSection(item.link)"
+          class="content"
+        >
+        <span class="icon">
+          <img [src]="item.logo" width="32px"/>
+        </span>
+          <span class="text"><b>{{ item.content }}</b></span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<!-- <div name="skills"
+    class="flex items-center justify-center w-full h-full pt-5 smallMedium:pt-2 ">
+    <div class="w-11/12">
+        <h2 class="ml-2 text-3xl font-bold text-myColor text-center">Skills</h2>
+        <div class="grid justify-center w-full grid-cols-3 gap-6 py-8 mt-5 ml-5 xsm:grid-cols-4 sm:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 sm:px-0">
+            <div class="w-20 duration-500 rounded-2xl hover:-translate-y-3 hover:delay-100 bg-myColor sm:w-32 "
+            *ngFor="let skill of skills">
+                <img [src]="skill.src" alt=" "
+                    class="w-20 h-16 mx-auto sm:h-32 sm:w-32 rounded-tr-2xl rounded-tl-2xl" />
+                <p class="pb-3 mt-4 text-sm font-bold text-center text-white sm:text-xl">
+                    {{skill.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- bg-gradient-to-b from-slate-300 to-slate-800 -->
+
+<section
+  class="pt-5 pb-8 px-4 md:px-8 bg-gradient-to-br from-gray-900 to-blue-900 text-white"
+>
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold mb-5 text-center">Technical Skills</h2>
+    <div>
+      <div>
+        <h3 class="text-2xl font-semibold mb-6 text-blue-300 text-myColor">
+          Languages & Frameworks
+        </h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          <div
+            class="flex bg-white/10 rounded-xl px-3 pt-3 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1"
+            *ngFor="let skill of skills"
+          >
+            <div class="text-2xl mb-2">
+              <img [src]="skill.src" alt="" width="50px " />
+            </div>
+            <div class="ml-3">
+              <h4 class="font-semibold">{{ skill.name }}</h4>
+              <p class="text-sm text-blue-300">{{ skill.level }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

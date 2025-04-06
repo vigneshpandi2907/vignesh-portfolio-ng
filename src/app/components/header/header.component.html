@@ -1,0 +1,14 @@
+<div name="head" class="sticky top-0 w-full h-20 bg-black z-100">
+    <div class="flex items-center justify-between text-white ">
+      <h1 class="mt-5 ml-6 text-4xl font-name font-bold">Vigneshwaran</h1>
+      <div class="mt-5 text-white">
+        <ul class="hidden md:flex">
+            <li
+              class="px-4 font-medium text-gray-500 capitalize duration-200 cursor-pointer hover:scale-110 hover:text-myColor"
+              *ngFor="let menu of menuList">
+              <a href="javascript:void(0)" (click)="scrollToSection(menu.link)" >{{menu.link}}</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>

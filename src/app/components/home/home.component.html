@@ -1,0 +1,35 @@
+<div name="home" class="w-full h-screen bg-black md:h-96">
+    <div class="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 pt-16 mx-auto md:flex-row ">
+        <div class="flex flex-col justify-center w-3/4 h-auto">
+            <h1 class="flex text-4xl font-bold text-white sm:text-5xl">
+                Hello,
+            </h1>
+
+            <p class="text-4xl font-bold text-white sm:text-5xl">
+                I'm a Full Stack <span class="text-myColor">Developer</span>
+            </p>
+            <p class="max-w-md py-4 text-gray-500">
+                Specializing in Java & Angular, developing efficient and scalable web applications.
+            </p>
+            <div>
+                <a href="resume" download=true
+                    class="flex items-center px-6 py-3 my-2 text-white rounded-md cursor-pointer group w-fit bg-orange-400 font-bold">
+                    Resume
+                    <span class="duration-300 group-hover:translate-x-2">
+                        <svg fill="white" width="20px" height="20px" viewBox="-100 -50 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34zm192-34l-136-136c-9.4-9.4-24.6-9.4-33.9 0l-22.6 22.6c-9.4 9.4-9.4 24.6 0 33.9l96.4 96.4-96.4 96.4c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l136-136c9.4-9.2 9.4-24.4 0-33.8z"/></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex">
+            <img [src]="profile" alt="my profile" class="mx-auto h-72 medium:h-96 rounded-2xl w-max md:w-full" />
+        </div>
+    </div>
+    <div class="h-20 overflow-hidden sm:h-20 md:h-48 medium:h-48 lg:h-48 ">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="w-full h-full">
+            <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+                class="stroke-none fill-black"></path>
+        </svg>
+    </div>
+</div>
