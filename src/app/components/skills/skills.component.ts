@@ -78,6 +78,6 @@ export class SkillsComponent {
     { name: 'MsSql', level: 'Expert',  src: 'assets/images/mssql-icon.png' },
     { name: 'MySql', level: 'Advanced', src: 'assets/images/mysql-icon.png' },
     { name: 'Git', level: 'Expert',  src: 'assets/images/git-icon.png' },
-    { name: 'Docker', level: 'Advanced', src: 'assets/images/docker-icon.png' },
+    { name: 'Docker', level: 'Intermediate', src: 'assets/images/docker-icon.png' },
   ]
 }
